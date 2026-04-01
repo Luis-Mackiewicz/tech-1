@@ -3,42 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tommy's adventure</title>
+    <title>Madcat</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-   <header class="header" id="header">
-  <nav class="header-nav">
-    <ul class="header-ul">
-      <li class="header-logo">Mad Cat</li>
-
-
-      <ul class="nav-links">
+     <header class="header" id="header">
+      <nav class="header-nav">
+        <ul class="header-ul">
+ 
+          <li class="header-logo">
+            <a href="#inicio">
+              <img src="./images/favicon.ico" alt="Mad Cat logo">
+              <span class="logo-text">Mad<span>Cat</span></span>
+            </a>
+          </li>
+ 
+          <ul class="nav-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#historia">História</a></li>
+            <li><a href="#questionario">Questionário</a></li>
+            <li><a href="#jogo">Jogo</a></li>
+          </ul>
+ 
+          <li class="nav-actions">
+            <button id="light-dark">☀ Tema</button>
+            <button class="btn-play" onclick="location.href='#jogo'">▶ Jogar</button>
+            <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+              <span></span><span></span><span></span>
+            </button>
+          </li>
+ 
+        </ul>
+      </nav>
+ 
+      <ul class="mobile-menu" id="mobile-menu">
         <li><a href="#inicio">Início</a></li>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#historia">História</a></li>
         <li><a href="#questionario">Questionário</a></li>
         <li><a href="#jogo">Jogo</a></li>
-        <li><button id="light-dark">claro | escuro</button></li>
+        <li><a href="#" id="light-dark-mobile">☀ Tema</a></li>
       </ul>
-
-      <li>
-        <button class="hamburger" id="hamburger" aria-label="Abrir menu">
-          <span></span><span></span><span></span>
-        </button>
-      </li>
-    </ul>
-  </nav>
-
-  <ul class="mobile-menu" id="mobile-menu">
-    <li><a href="#inicio">Início</a></li>
-    <li><a href="#sobre">Sobre</a></li>
-    <li><a href="#historia">História</a></li>
-    <li><a href="#questionario">Questionário</a></li>
-    <li><a href="#jogo">Jogo</a></li>
-    <li><a href="#" id="light-dark-mobile">claro | escuro</a></li>
-  </ul>
-</header>
+    </header>
 
     <section id="inicio">
       <div class="content-center">
