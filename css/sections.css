@@ -3,7 +3,7 @@
 #historia,
 #questionario,
 #jogo {
-  height: 100dvh;
+  min-height: 100dvh;
   width: 100%;
   display: flex;
   align-items: center;
