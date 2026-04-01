@@ -3,98 +3,406 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tommy's adventure</title>
+    <title>Mad Cat</title>
+    <link rel="icon" href="./images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=DM+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-   <header class="header" id="header">
-  <nav class="header-nav">
-    <ul class="header-ul">
-      <li class="header-logo">Mad Cat</li>
+    <header class="header" id="header">
+      <nav class="header-nav">
+        <ul class="header-ul">
+          <li class="header-logo">
+            <a href="#inicio">
+              <img src="./favicon.ico" alt="Mad Cat logo" />
+              <span class="logo-text">Mad<span>Cat</span></span>
+            </a>
+          </li>
 
+          <ul class="nav-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#historia">História</a></li>
+            <li><a href="#questionario">Questionário</a></li>
+            <li><a href="#jogo">Jogo</a></li>
+          </ul>
 
-      <ul class="nav-links">
+          <li class="nav-actions">
+            <button id="light-dark">☀ Tema</button>
+            <button class="btn-play" onclick="location.href = '#jogo'">
+              ▶ Jogar
+            </button>
+            <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+              <span></span><span></span><span></span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="mobile-menu" id="mobile-menu">
         <li><a href="#inicio">Início</a></li>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#historia">História</a></li>
         <li><a href="#questionario">Questionário</a></li>
         <li><a href="#jogo">Jogo</a></li>
-        <li><button id="light-dark">claro | escuro</button></li>
+        <li><a href="#" id="light-dark-mobile">☀ Tema</a></li>
       </ul>
-
-      <li>
-        <button class="hamburger" id="hamburger" aria-label="Abrir menu">
-          <span></span><span></span><span></span>
-        </button>
-      </li>
-    </ul>
-  </nav>
-
-  <ul class="mobile-menu" id="mobile-menu">
-    <li><a href="#inicio">Início</a></li>
-    <li><a href="#sobre">Sobre</a></li>
-    <li><a href="#historia">História</a></li>
-    <li><a href="#questionario">Questionário</a></li>
-    <li><a href="#jogo">Jogo</a></li>
-    <li><a href="#" id="light-dark-mobile">claro | escuro</a></li>
-  </ul>
-</header>
+    </header>
 
     <section id="inicio">
-      <div class="content-center">
-        <h1>Madcat</h1>
-        <p>
-          Prepare seus reflexos! Em Mad Cat, você assume o controle em uma jornada frenética onde parar não é uma opção. Inspirado no clássico Mário Bross, sua missão é simples, mas desafiadora: corra o mais longe que puder e desvie de todos os obstáculos que surgirem pelo caminho.
-        </p>
-        <div class="image-div">
-         <img class="game-image" src="/images/img2.png" alt="game image">
+      <p class="hero-tag">Vai encarar?</p>
+      <h1 class="hero-title">Mad<span>Cat</span></h1>
+      <p class="hero-sub">
+        Prepare seus reflexos. Uma jornada frenética onde parar não é uma opção
+        — corra, desvie, sobreviva.
+      </p>
+      <div class="hero-cta">
+        <button class="cta-primary" onclick="location.href = '#jogo'">
+          ▶ Jogar Agora
+        </button>
+        <a href="#sobre" class="cta-secondary">Saiba Mais</a>
+      </div>
+      <img
+        class="hero-image"
+        src="./images/phases/first_phase.jpeg"
+        alt="Mad Cat gameplay"
+      />
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">3</span>
+          <span class="stat-label">Vidas</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">∞</span>
+          <span class="stat-label">Obstáculos</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">1</span>
+          <span class="stat-label">Missão</span>
         </div>
       </div>
     </section>
+
     <section id="sobre">
-       <div class="card">
-        <p>
-          Prepare-se para entrar no mundo Mad Cat! Inspirado nos clássicos de plataforma, Mad Cat é uma experiência frenética de ação contínua onde cada segundo conta. Você começa a partida já em movimento e seu objetivo é simples, mas nada fácil: chegar ao final do percurso com 3 vidas.
-        </p>
-        <p>
-         Desvie de obstáculos, destrua inimigos e domine o tempo perfeito dos saltos. Sua agilidade será colocada à prova a cada segundo.
-          Com um visual nostálgico em pixel art e controles simples e responsivos "A" e "D" para se mover e "Espaço" para pular — o jogo entrega uma experiência rápida, intensa e viciante.
-          Cada erro custa caro. Cada acerto te leva mais longe.
-        </p>
-       </div>
+      <div class="sobre-inner">
+        <div>
+          <p class="section-label">sobre o jogo</p>
+          <h2 class="section-title">O que é <span>Mad Cat?</span></h2>
+          <p
+            style="
+              font-size: 15px;
+              color: var(--muted);
+              line-height: 1.8;
+              margin-bottom: 1.5rem;
+            "
+          >
+            Inspirado nos clássicos de plataforma, Mad Cat é uma experiência
+            frenética de ação contínua. Você começa já em movimento — seu
+            objetivo: chegar ao final do percurso com 3 vidas.
+          </p>
+          <p
+            style="
+              font-size: 15px;
+              color: var(--muted);
+              line-height: 1.8;
+              margin-bottom: 2rem;
+            "
+          >
+            Com visual nostálgico em pixel art e controles simples e
+            responsivos, o jogo entrega uma experiência rápida, intensa e
+            viciante. Cada erro custa caro. Cada acerto te leva mais longe.
+          </p>
+          <div class="controls-box">
+            <div class="control-item">
+              <span class="key">A</span>
+              <span class="key-desc">Mover esquerda</span>
+            </div>
+            <div class="control-item">
+              <span class="key">D</span>
+              <span class="key-desc">Mover direita</span>
+            </div>
+            <div class="control-item">
+              <span class="key">ESP</span>
+              <span class="key-desc">Pular</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-grid" style="align-self: start; margin-top: 0.5rem">
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <p class="feature-title">Frenético</p>
+            <p class="feature-desc">
+              Ação contínua sem pausas. O movimento é o que te mantém vivo.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🎮</div>
+            <p class="feature-title">Pixel Art</p>
+            <p class="feature-desc">
+              Visual nostálgico com estética de jogos clássicos dos anos 90.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">💀</div>
+            <p class="feature-title">Desafiador</p>
+            <p class="feature-desc">
+              3 vidas. Sem misericórdia. Cada erro pode ser o seu último.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🏆</div>
+            <p class="feature-title">Vitória</p>
+            <p class="feature-desc">
+              Chegue ao fim e ganhe o "Congratulations" definitivo.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
-    <section id="historia"">
-      <dl style="color: #f5f5f5; font-weight: bold;">
-        <dt>O QUE É MEOWTOPIA?</dt>
-        <dd>Tommy é um jovem guerreiro da tribo dos Pixel-Runners, treinado desde cedo para atravessar vales perigosos em velocidade extrema.</dd>
 
-        <dt>O Conflito</dt>
-        <dd>O Reino de Ethérea foi invadido por sombras que transformam o chão em armadilhas mortais. Tommy é o único que restou com agilidade suficiente para escapar.</dd>
+    <section id="historia">
+      <div class="historia-inner">
+        <p class="section-label">lore</p>
+        <h2 class="section-title">A Jornada de <span>Buggy</span></h2>
 
-        <dt>A Jornada</dt>
-        <dd>Para salvar seu povo, ele precisa atravessar o Deserto dos Espinhos e a Floresta de Cristal sem parar um segundo sequer, pois o movimento é o que mantém seu escudo ativo.</dd>
+        <div class="story-list">
+          <div class="story-item">
+            <div class="story-line"></div>
+            <div class="story-content">
+              <p class="story-tag">Origem</p>
+              <h3 class="story-heading">O Gato Investigador</h3>
+              <p class="story-text">
+                Buggy é um gato curioso e perspicaz que vive nas ruas iluminadas
+                de Meowtopia. Conhecido por sua habilidade em encontrar coisas
+                perdidas, ele sempre resolve pequenos mistérios — até que algo
+                pessoal muda tudo.
+              </p>
+            </div>
+          </div>
 
-        <dt>O Perigo</dt>
-        <dd>Com apenas uma vida e reflexos apurados, qualquer erro de cálculo contra os obstáculos resultará em um fim de jogo imediato.</dd>
+          <div class="story-item">
+            <div class="story-line"></div>
+            <div class="story-content">
+              <p class="story-tag">Conflito</p>
+              <h3 class="story-heading">O Desaparecimento de Lily</h3>
+              <p class="story-text">
+                Lily, sua melhor amiga, desaparece sem deixar rastros claros.
+                Apenas pistas estranhas e fragmentadas surgem pela cidade,
+                indicando que há algo muito maior por trás do sumiço.
+              </p>
+            </div>
+          </div>
 
-        <dt>O Destino</dt>
-        <dd>Ao final do percurso, a luz será restaurada e o "Congratulations" selará a vitória definitiva de Tommy sobre as trevas.</dd>
-      </dl>
+          <div class="story-item">
+            <div class="story-line"></div>
+            <div class="story-content">
+              <p class="story-tag">Missão</p>
+              <h3 class="story-heading">Seguindo as Pistas</h3>
+              <p class="story-text">
+                Explorando três regiões distintas em estilo pixel art, Buggy
+                segue rastros escondidos, resolve enigmas e encontra personagens
+                suspeitos — incluindo um detetive misterioso que parece saber
+                mais do que revela.
+              </p>
+            </div>
+          </div>
+
+          <div class="story-item">
+            <div class="story-line"></div>
+            <div class="story-content">
+              <p class="story-tag">Destino</p>
+              <h3 class="story-heading">A Verdade em Meowtopia</h3>
+              <p class="story-text">
+                Quanto mais avança, mais Buggy percebe que o desaparecimento de
+                Lily está ligado a um segredo oculto da cidade. No fim da
+                jornada, ele precisará encarar a verdade — e decidir em quem
+                realmente pode confiar.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <!-- ===== QUESTIONÁRIO ===== -->
     <section id="questionario">
-             <div class="card">
-              <h2>Questionário</h2>
-              <p class="message"></p>
-              <form action="">
-                <input type="text" placeholder="digite o seu nome">
-              </form>
-             </div>
+      <div class="quiz-inner">
+        <p class="section-label">teste seu conhecimento</p>
+        <h2 class="section-title">Quiz <span>Mad Cat</span></h2>
+
+        <div class="quiz-card" id="quiz-container">
+          <div class="quiz-progress">
+            <span class="quiz-counter" id="quiz-counter">Pergunta 1 / 4</span>
+            <span class="quiz-score" id="quiz-score">Pontos: 0</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" id="quiz-bar" style="width: 25%"></div>
+          </div>
+          <p class="quiz-question" id="quiz-question">
+            Quantas vidas Tommy tem na sua jornada?
+          </p>
+          <div class="quiz-options" id="quiz-options"></div>
+          <p class="quiz-feedback" id="quiz-feedback"></p>
+          <button class="btn-quiz" id="quiz-btn" disabled>Próxima →</button>
+        </div>
+      </div>
     </section>
-    <section
-      id="jogo""
-    >
-   
+
+    <!-- ===== JOGO ===== -->
+    <section id="jogo">
+      <div class="jogo-inner">
+        <p class="section-label">arena</p>
+        <h2 class="section-title">Área do <span>Jogo</span></h2>
+        <div class="game-placeholder">
+          <div class="game-placeholder-icon">🎮</div>
+          <p class="game-placeholder-text">Jogo em breve...</p>
+        </div>
+      </div>
     </section>
-    <script src="./js/script.js"></script>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <p class="footer-logo">Mad<span>Cat</span></p>
+      <p class="footer-text">© 2025 Mad Cat. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+      // ===== HAMBURGER =====
+      const hamburger = document.getElementById("hamburger");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("open");
+        mobileMenu.classList.toggle("open");
+      });
+
+      mobileMenu.querySelectorAll("a").forEach((a) => {
+        a.addEventListener("click", () => {
+          hamburger.classList.remove("open");
+          mobileMenu.classList.remove("open");
+        });
+      });
+
+      // ===== TEMA (placeholder — adicione seu dark-mode CSS) =====
+      const themeBtn = document.getElementById("light-dark");
+      const themeBtnMobile = document.getElementById("light-dark-mobile");
+      function toggleTheme() {
+        document.body.classList.toggle("dark-mode");
+      }
+      themeBtn.addEventListener("click", toggleTheme);
+      themeBtnMobile.addEventListener("click", toggleTheme);
+
+      // ===== QUIZ =====
+      const questions = [
+        {
+          q: "Quantas vidas Tommy tem na sua jornada?",
+          opts: ["1 vida", "2 vidas", "3 vidas", "5 vidas"],
+          ans: 2,
+        },
+        {
+          q: "Qual tecla é usada para pular em Mad Cat?",
+          opts: ["Enter", "Espaço", "Ctrl", "Shift"],
+          ans: 1,
+        },
+        {
+          q: "Qual é o nome do reino invadido pelas sombras?",
+          opts: ["Meowtopia", "Pixel Land", "Ethérea", "Catvania"],
+          ans: 2,
+        },
+        {
+          q: "O que mantém o escudo de Tommy ativo durante a corrida?",
+          opts: [
+            "Coletar moedas",
+            "O movimento constante",
+            "Destruir inimigos",
+            "Pegar power-ups",
+          ],
+          ans: 1,
+        },
+      ];
+
+      let current = 0,
+        score = 0,
+        answered = false;
+
+      const qEl = document.getElementById("quiz-question");
+      const optsEl = document.getElementById("quiz-options");
+      const fbEl = document.getElementById("quiz-feedback");
+      const btn = document.getElementById("quiz-btn");
+      const ctr = document.getElementById("quiz-counter");
+      const scEl = document.getElementById("quiz-score");
+      const bar = document.getElementById("quiz-bar");
+      const cont = document.getElementById("quiz-container");
+
+      function renderQuestion() {
+        const q = questions[current];
+        answered = false;
+        btn.disabled = true;
+        fbEl.textContent = "";
+        qEl.textContent = q.q;
+        ctr.textContent = `Pergunta ${current + 1} / ${questions.length}`;
+        bar.style.width = `${((current + 1) / questions.length) * 100}%`;
+        optsEl.innerHTML = "";
+
+        q.opts.forEach((opt, i) => {
+          const b = document.createElement("button");
+          b.className = "quiz-option";
+          b.textContent = opt;
+          b.addEventListener("click", () => {
+            if (answered) return;
+            answered = true;
+            btn.disabled = false;
+
+            optsEl
+              .querySelectorAll(".quiz-option")
+              .forEach((el) => (el.disabled = true));
+
+            if (i === q.ans) {
+              b.classList.add("correct");
+              score++;
+              scEl.textContent = `Pontos: ${score}`;
+              fbEl.style.color = "#4ade80";
+              fbEl.textContent = "✓ Correto!";
+            } else {
+              b.classList.add("wrong");
+              optsEl
+                .querySelectorAll(".quiz-option")
+                [q.ans].classList.add("correct");
+              fbEl.style.color = "#f87171";
+              fbEl.textContent = "✗ Errado!";
+            }
+          });
+          optsEl.appendChild(b);
+        });
+      }
+
+      btn.addEventListener("click", () => {
+        current++;
+        if (current < questions.length) {
+          renderQuestion();
+          btn.textContent =
+            current === questions.length - 1 ? "Finalizar ✓" : "Próxima →";
+        } else {
+          const pct = Math.round((score / questions.length) * 100);
+          cont.innerHTML = `
+            <div class="quiz-result">
+              <p class="result-score">${pct}%</p>
+              <p class="result-label">${score} de ${questions.length} corretas</p>
+              <p style="font-size:13px; color:var(--muted); margin-top:1rem;">
+                ${pct >= 75 ? "🏆 Você é um verdadeiro Pixel-Runner!" : pct >= 50 ? "⚡ Bom, mas Tommy precisa de você melhor!" : "💀 Continue treinando, guerreiro!"}
+              </p>
+              <button class="btn-quiz" onclick="location.reload()" style="margin-top:1.5rem;">↺ Tentar Novamente</button>
+            </div>`;
+        }
+      });
+
+      renderQuestion();
+    </script>
   </body>
 </html>
