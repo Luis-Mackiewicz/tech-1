@@ -10,6 +10,10 @@
   overflow-y: auto;
 }
 
+.card p {
+  color: black;
+}
+
 .description-list {
   display: flex;
   flex-direction: column;
