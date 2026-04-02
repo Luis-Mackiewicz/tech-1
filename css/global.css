@@ -1,7 +1,5 @@
-@import url("form.css");
 @import url("header.css");
-@import url("sections.css");
-@import url("components.css");
+@import url("sections/inicio.css");
 @import url("https://fonts.googleapis.com/css2?family=Honk:MORF@15&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 * {
@@ -12,10 +10,9 @@
 
 :root {
   --bg-light: linear-gradient(
-    90deg,
-    rgba(42, 123, 155, 1) 0%,
-    rgba(87, 199, 133, 1) 50%,
-    rgba(237, 221, 83, 1) 100%
+    323deg,
+    rgba(89, 35, 35, 1) 1%,
+    rgba(255, 155, 15, 1) 100%
   );
 
   --bg-dark: linear-gradient(
@@ -62,6 +59,19 @@ ul {
 p {
   color: var(--light-text);
   font-weight: bold;
+}
+
+#inicio,
+#sobre,
+#historia,
+#questionario,
+#jogo {
+  min-height: 100dvh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
 }
 
 @media (min-width: 1200px) {
