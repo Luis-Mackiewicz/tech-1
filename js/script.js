@@ -8,12 +8,6 @@ const form = document.querySelector(".form");
 const input = document.querySelector("input");
 const message = document.querySelector(".message");
 
-const gameName = "Mad cat";
-const developer = "Tainá";
-const year = 2026;
-const genero = "Aventura";
-const gameStyle = "single player";
-
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
