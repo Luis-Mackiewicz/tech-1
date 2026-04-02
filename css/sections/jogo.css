@@ -1,0 +1,11 @@
+.game-link {
+  background-color: black;
+  padding: 12px 16px;
+  width: 40%;
+  align-self: center;
+  justify-self: center;
+  border-radius: 1rem;
+  text-align: center;
+  color: #f5f5f5;
+  margin-bottom: 2rem;
+}
