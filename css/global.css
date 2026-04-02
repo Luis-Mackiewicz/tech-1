@@ -1,5 +1,7 @@
 @import url("components/header.css");
 @import url("sections/inicio.css");
+@import url("sections/sobre.css");
+@import url("/css/media/media.css");
 @import url("https://fonts.googleapis.com/css2?family=Honk:MORF@15&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 * {
@@ -76,10 +78,20 @@ p {
   overflow-y: auto;
 }
 
-@media (min-width: 1200px) {
-  h1 {
-    font-size: 6em;
-  }
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 80%;
+  overflow-y: auto;
+  gap: 0.25rem;
+}
+
+.section-title {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 body::before {

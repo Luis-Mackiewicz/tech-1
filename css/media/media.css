@@ -1,0 +1,39 @@
+@media (min-width: 748px) {
+  .main-content {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .section-title {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .section-text {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .section-media {
+    grid-column: 2;
+    grid-row: span 2;
+    display: flex;
+  }
+
+  .card {
+    grid-template-columns: repeat(2 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 6em;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+}
