@@ -4,7 +4,24 @@ const darkTheme = document.getElementById("light-dark");
 const darkThemeMobile = document.getElementById("light-dark-mobile");
 const hamburger = document.getElementById("hamburger");
 const mobileMenu = document.getElementById("mobile-menu");
-const message = document.getElementsByClassName("message");
+const form = document.querySelector(".form");
+const input = document.querySelector("input");
+const message = document.querySelector(".message");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const nome = input.value.trim();
+
+  if (!nome) {
+    message.textContent = "Digite um nome válido 😐";
+    return;
+  }
+
+  message.textContent = `Bem-vindo, ${nome}! 🎉`;
+
+  input.value = "";
+});
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("open");
