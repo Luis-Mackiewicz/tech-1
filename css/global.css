@@ -33,6 +33,8 @@ body {
   font-family: "Inter", sans-serif;
   filter: blur(10px);
   background: var(--bg-light);
+  min-height: 100dvh;
+  position: relative;
 }
 
 h1 {
@@ -78,4 +80,16 @@ p {
   h1 {
     font-size: 6em;
   }
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("../images/background/background_pattern.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 3%;
+  z-index: -1;
 }
